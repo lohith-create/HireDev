@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireDevelopers</title>
+</head>
+<body>
+    <div class="floating-form-container">
+        <form id="developer-form" class="floating-form">
+          <h2>Apply as Developer</h2>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="job-opening">Job Opening:</label>
+            <select id="job-opening" name="job-opening" required>
+              <option value="">Select a job opening</option>
+              <option value="Software Developer">Software Developer</option>
+              <option value="Software Architect">Software Architect</option>
+              <option value="Mobile Developer">Mobile Developer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="technology">Technology:</label>
+            <select id="technology" name="technology" required>
+              <option value="">Select a technology</option>
+              <option value="JS">JavaScript</option>
+              <option value="ReactJS">ReactJS</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+      <div class="job-openings-section">
+        <h2>Job Openings</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Job Opening</th>
+              <th>Technology</th>
+              <th>Domain</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Software Developer</td>
+              <td>JavaScript</td>
+              <td>Software</td>
+            </tr>
+            <tr>
+              <td>Software Architect</td>
+              <td>ReactJS</td>
+              <td>Software</td>
+            </tr>
+            <tr>
+              <td>Mobile Developer</td>
+              <td>ReactJS</td>
+              <td>Mobile</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- HireDevelopers page -->
+<h1>Hire Developers</h1>
+
+<!-- Skills selection form -->
+<form>
+  <div class="form-group">
+    <label for="skills">Select Skills:</label>
+    <select class="form-control" id="skills" name="skills">
+      <option value="JS">JavaScript</option>
+      <option value="ReactJS">ReactJS</option>
+      <option value="NodeJS">NodeJS</option>
+      <option value="Python">Python</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<!-- Developers profiles -->
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="developer1.jpg" alt="Developer 1">
+      <div class="card-body">
+        <h5 class="card-title">Jason Mamoa</h5>
+        <p class="card-text">Skills: JavaScript, ReactJS</p>
+        <p class="card-text">Remuneration: Rs.100/hour</p>
+        <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="developer2.jpg" alt="Developer 2">
+      <div class="card-body">
+        <h5 class="card-title">Karan Khan</h5>
+        <p class="card-text">Skills: NodeJS, Python</p>
+        <p class="card-text">Remuneration: RS.120/hour</p>
+        <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="developer3.jpg" alt="Developer 3">
+      <div class="card-body">
+        <h5 class="card-title">Ravi Naik</h5>
+        <p class="card-text">Skills: JavaScript, ReactJS, NodeJS</p>
+        <p class="card-text">Remuneration: RS.150/hour</p>
+        <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
